@@ -1,0 +1,106 @@
+<!-- source/flats/show.html.erb -->
+
+<!-- Read from data.flats with owner's name as key -->
+<% flat = data.flats[owner] %>
+
+<!-- Inject flat data in template -->
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 50%), url('<%= image_path flat.cover %>'); height: 40vh; background-position: center;">
+</div>
+
+<div class="header-flat">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+          <div class="header-flat-details">
+              <div class="header-flat-owner text-center">
+                  <%= image_tag flat.owner_picture, class: "avatar-profil" %>
+                  <p><%= flat.owner_name %></p>
+              </div>
+              <div class="header-flat-name">
+                <h1 style="font-size: 18px;"><%= flat.summary %></h1>
+                <p><%= flat.city %></p>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+          </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+          <form action="#">
+          <h4>Book this flat</h4>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-xs-6">
+                  <input type="email" class="form-control" id="email" placeholder="Checkin">
+                </div>
+                <div class="col-xs-6">
+                  <input type="email" class="form-control" id="email" placeholder="Checkout">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <select class="form-control" id="sel1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+              </select>
+            </div>
+             <button type="submit" class="btn btn-danger" style="width: 100%;">Book it</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flat-description">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <h4>About this flat</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur minima, atque soluta omnis. Delectus aperiam, quos, nisi repellendus cupiditate sed quo porro doloribus hic repellat nostrum unde! Officiis, reiciendis, beatae!</p>
+        <hr>
+        <div class="row">
+          <div class="col-xs-12 col-sm-2">
+            <p>The space</p>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <ul class="list-unstyled" id="style">
+              <li>Accommodates: <strong> <%= flat.accomodate%></strong></li>
+              <li>Bathrooms:<strong> <%= flat.bath %></strong></li>
+              <li>Bed type:<strong> <%= flat.bedType %></strong></li>
+              <li>Bedrooms: <strong><%= flat.bedRoom %></strong></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <ul class="list-unstyled">
+              <li>Beds: <strong><%= flat.bed %></strong></li>
+              <li>Property type: <strong><%= flat.propertyType %></strong></li>
+              <li>Room type: <strong><%= flat.roomType %></strong></li>
+            </ul>
+          </div>
+        </div>
+         <hr>
+        <div class="row">
+          <div class="col-xs-12 col-sm-2">
+            <p>Amenities</p>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <ul class="list-unstyled">
+              <li>Kitchen</li>
+              <li>Wifi</li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <ul class="list-unstyled">
+              <li>Tv</li>
+              <li>Welcome drink</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

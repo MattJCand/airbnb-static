@@ -1,0 +1,48 @@
+edward:
+  owner_name: Edward
+  picture: background.jpg
+  cover: background1.jpg
+  owner_picture: avatar.jpg
+  name: Edward's home
+  summary: Best place in San Francisco
+  city: San Francisco, USA
+  wifi: false
+  accomodate: 2
+  bath: 1
+  bedType: sofa
+  bedRoom: 1
+  bed: 1
+  propertyType: Apartment
+  roomType: Entire home/apt
+seb:
+  owner_name: Sebastien Saunier
+  picture: montmartre.jpg
+  cover: montmartre.jpg
+  owner_picture: seb.jpg
+  name: Seb's home
+  summary: Charming room in Montmartre
+  city: Paris, France
+  wifi: true
+  accomodate: 4
+  bath: 2
+  bedType: real bed
+  bedRoom: 2
+  bed: 2
+  propertyType: Apartment
+  roomType: Entire home/apt
+romain:
+  owner_name: Romain Paillard
+  picture: london.jpg
+  cover: london.jpg
+  owner_picture: romain.jpeg
+  name: Romain's home
+  summary: Nice flat in Piccadilly
+  city: London, UK
+  wifi: false
+  accomodate: 5
+  bath: 3
+  bedType: real bed
+  bedRoom: 3
+  bed: 3
+  propertyType: House
+  roomType: Entire home/apt
