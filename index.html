@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- For Bootstrap responsiveness -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>The Middleman</title>
+
+    <link href="stylesheets/all.css" rel="stylesheet" />
+    <script src="javascripts/all.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="index">
+
+    <div class="navbar-wagon">
+  <!-- Logo -->
+<a class="navbar-wagon-brand" href="/">    <img src="images/lewagon.png" />
+</a>
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+    <!-- Search form -->
+    <form action="" class="navbar-wagon-search">
+      <input type="text" class="navbar-wagon-search-input" placeholder="Search something">
+      <button type="submit" class="navbar-wagon-search-btn">
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
+
+    <!-- Text link -->
+    <a href="https://www.lewagon.com" class="navbar-wagon-item navbar-wagon-link">Wagon</a>
+
+    <!-- Text link -->
+    <a href="" class="navbar-wagon-item navbar-wagon-link">Team</a>
+
+    <!-- Notification link-->
+    <a href="" class="navbar-wagon-item navbar-wagon-link">
+      <div class="badge-container">
+        <i class="fa fa-envelope-o"></i>
+        <div class="badge badge-blue">3</div>
+      </div>
+    </a>
+
+    <!-- Profile picture and dropdown -->
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <img src="https://placehold.it/50x50" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Button (call-to-action) -->
+    <a href="" class="navbar-wagon-item navbar-wagon-button btn">Post stuff</a>
+  </div>
+
+  <!-- Dropdown appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="#">Some mobile link</a></li>
+        <li><a href="#">Other one</a></li>
+        <li><a href="#">Other one</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="banner">
+       <div class="container text-center">
+          <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <h1 class="banner-title">Welcome Home</h1>
+                <p class="banner-description">Rent unique places to stay from local hosts in 190+ countries.</p></br>
+                <form class="form-inline">
+                    <div class="form-group">
+                      <input type="email" class="form-control input-lg" id="email" placeholder="Checkin">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control input-lg" id="pwd" placeholder="Checkout">
+                    </div>
+                    <select class="form-control input-lg">
+                        <option value="1">1 person</option>
+                        <option value="2">2 persons</option>
+                        <option value="3">3 persons</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary btn-lg">Search</button>
+                </form>
+            </div>
+        </div>
+      </div>
+   </div>
+
+    <!-- Your features code -->
+    <div class="container text-center feature padded ">
+      <div class="row">
+        <div class="col-sm-12 col-md-3">
+            <img src="images/globe.png" />
+            <h2>Discover the world</h2>
+            <p>The earth is your new home.</p>
+        </div>
+        <div class="col-sm-12 col-md-3">
+            <img src="images/dollar.png" />
+            <h2>Pay online</h2>
+            <p>No cash issues anymore</p>
+        </div>
+        <div class="col-sm-12 col-md-3">
+            <img src="images/beer.png" />
+            <h2>Meet people</h2>
+            <p>Discover new culture and lifestyle.</p>
+        </div>
+        <div class="col-sm-12 col-md-3">
+            <img src="images/heart.png" />
+            <h2>Share and love</h2>
+            <p>Join a community you will love.</p>
+       </div>
+      </div>
+    </div>
+    <!-- Your cards code -->
+    <div class="wrapper-red padded features">
+    <h1 class="text-center">Your next-trip</h1>
+      <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4">
+              <div class="card" style="background-image: url('images/background.jpg');">
+                <div class="card-category">San Francisco, USA</div>
+                <div class="card-description">
+                  <h2>Edward's home</h2>
+                  <p>Best place in San Francisco</p>
+                </div>
+            <img class="card-user avatar avatar-large" src="images/avatar.jpg" />
+            <a class="card-link" href="flats/edward.html">#</a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <div class="card" style="background-image: url('images/montmartre.jpg');">
+                <div class="card-category">Paris, France</div>
+                <div class="card-description">
+                  <h2>Seb's home</h2>
+                  <p>Charming room in Montmartre</p>
+                </div>
+            <img class="card-user avatar avatar-large" src="images/seb.jpg" />
+            <a class="card-link" href="flats/seb.html">#</a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <div class="card" style="background-image: url('images/london.jpg');">
+                <div class="card-category">London, UK</div>
+                <div class="card-description">
+                  <h2>Romain's home</h2>
+                  <p>Nice flat in Piccadilly</p>
+                </div>
+            <img class="card-user avatar avatar-large" src="images/romain.jpeg" />
+            <a class="card-link" href="flats/romain.html">#</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Your newsletter code -->
+    <div class="text-center padded">
+        <h1>Get news from us</h1>
+        <p>Leave us your mail and get news from us</p>
+        <form class="form-inline">
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputEmail3">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Bob@gmail.com">
+          </div>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </div>
+
+    <!-- Your map code -->
+    <div id="map" style="width: 100%; height: 500px; position: relative; overflow: hidden;"></div>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript">
+        var myLatlng = new google.maps.LatLng(48.865021, 2.379853);
+
+        var myOptions = {
+          zoom: 16,
+          center: myLatlng,
+          scrollwheel: false,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          styles: [] // TODO: replace [] by array from https://snazzymaps.com/
+        };
+
+        var map = new google.maps.Map(document.getElementById('map'), myOptions);
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: "You are here!"
+        });
+    </script>
+
+        <div id="footer">
+      <div class="footer">
+        <div class="content">
+            <div class="row">
+              <div class="col-xs-4">
+                <ul class="list-inline">
+                  <li><i class="fa fa-youtube" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                </ul>
+              </div>
+              <div class="col-xs-8 text-right">
+                 <p>This is a Airbnb Home challenge @ LeWagon</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
